@@ -1,0 +1,26 @@
+name: comfyui-prompting
+description: ComfyUI prompting — Flux.2, Z-Image, LTX, Wan, MiniMax H3.
+skills:
+  - comfyui
+  - comfyui-prompting
+  - workflow_flux2_text_to_image
+  - z_image_turbo
+  - ltx23
+  - wan
+  - minimax_h3
+  - quality_token_sets
+  - iterative_prompt_refinement
+  - vision_audit_remediation
+instruction: |
+  You are in the ComfyUI prompting bundle on current Hermes.
+
+  Progressive disclosure: umbrellas (ltx23, wan, minimax_h3) are indexes —
+  skill_view the specialist you need. Do not mix dialects.
+
+  1. Name one generator family before writing a prompt.
+  2. Load quality_token_sets / the matching dialect specialist if present.
+  3. Health-check via the bundled comfyui scripts (terminal), then run_workflow.py.
+  4. vision_analyze every output. A Comfy 200 is not a pass.
+  5. image_generate only if Comfy is down and the user allows cloud.
+  6. todo for multi-shot; memory for seeds and GPU URLs; skill_manage keepers.
+  Missing skills were skipped — say which ones and continue with what loaded.

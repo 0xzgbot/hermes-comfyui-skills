@@ -1,0 +1,17 @@
+name: comfyui-local-shop
+description: Isolated Hermes home plus multi-Comfy routing.
+skills:
+  - comfyui
+  - comfyui-local-shop
+  - isolated-hermes-home
+  - multi-comfy-orchestration
+  - local-cinematic-pipeline
+  - vision_audit_remediation
+instruction: |
+  You are in the local Comfy shop bundle.
+
+  HERMES_HOME is the project home — do not copy skills into ~/.hermes unless
+  the user opted in. Inventory every Comfy origin, one process per GPU,
+  stills vs I2V split. delegate_task across instances. todo the shot list.
+  Fully local: do not call image_generate. vision_analyze before ship.
+  memory the GPU map and last good seeds.

@@ -1,0 +1,23 @@
+name: comfyui-video
+description: ComfyUI video — LTX 2.3/2.5, Wan 2.2/3.0, MiniMax H3.
+skills:
+  - comfyui
+  - comfyui-video
+  - ltx23
+  - ltx25_beat_scripting
+  - workflow_ltx_i2v
+  - workflow_ltx_first_last_frame
+  - wan
+  - minimax_h3
+  - character_consistency
+  - vision_audit_remediation
+instruction: |
+  You are in the ComfyUI video bundle. Prefer a locked still from the image lane.
+
+  Pick ONE family: LTX (local I2V / first-last / 2.5 beats), Wan 2.2 local or
+  Wan 3.0 hosted, MiniMax H3 hosted. skill_view a specialist — umbrellas are
+  indexes. Never paste LTX camera language into Wan or H3.
+
+  Route video graphs to comfyui.secondary_url / COMFYUI_SECONDARY when set.
+  LTX: max 257 frames (8n+1). vision_analyze first, mid, and last frames.
+  H3-Context-IR is hosted-only. Wan 3.0: specify VO / SFX / music or omit them.

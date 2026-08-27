@@ -1,0 +1,21 @@
+name: comfyui-image
+description: ComfyUI stills — Flux.2, Z-Image, img2img, inpaint, upscale.
+skills:
+  - comfyui
+  - comfyui-image
+  - workflow_flux2_text_to_image
+  - z_image_turbo
+  - flux2dev_prompt_engineering_master
+  - quality_token_sets
+  - iterative_prompt_refinement
+  - vision_audit_remediation
+instruction: |
+  You are in the ComfyUI image bundle. Stills only — send video to /comfyui-video.
+
+  FLUX 2 for hero frames, Z-Image for boards then promote. Use bundled comfyui
+  workflows for img2img / inpaint / upscale.
+
+  Run through terminal (health_check.py, run_workflow.py / run_batch.py).
+  Parallel seeds: delegate_task or run_batch.py, not two Flux graphs on one GPU.
+  vision_analyze identity, hands, text, product. Fail → one change, re-run.
+  image_generate is cloud fallback only when Comfy is down and the user allows it.

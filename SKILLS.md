@@ -1,22 +1,31 @@
 ---
 name: hermes-comfyui-skills
-description: Hermes ComfyUI skill bundles — image and video generation workflows
+description: ComfyUI playbooks and bundles for current Hermes.
 ---
 
-# Hermes ComfyUI Skill Bundles
+# Hermes ComfyUI Skills
+
+Tap: `0xzgbot/hermes-comfyui-skills` (default path `skills/`).
 
 ## Install
 
 ```bash
-hermes skills tap add zgbot/hermes-comfyui-skills
+hermes skills tap add 0xzgbot/hermes-comfyui-skills
+hermes skills install 0xzgbot/hermes-comfyui-skills/comfyui-prompting
+hermes skills install 0xzgbot/hermes-comfyui-skills/comfyui-image
+hermes skills install 0xzgbot/hermes-comfyui-skills/comfyui-video
+hermes skills install 0xzgbot/hermes-comfyui-skills/comfyui-local-shop
+hermes skills install 0xzgbot/hermes-comfyui-skills/comfyui-batch-cron
 ```
 
-## Available Bundles
+## Skills
 
-| Bundle | Command | Skills | Purpose |
-|--------|---------|--------|---------|
-| `comfyui-prompting` | `/comfyui-prompting` | 9 | All-in-one image + video generation |
-| `comfyui-image` | `/comfyui-image` | 4 | Still image workflows |
-| `comfyui-video` | `/comfyui-video` | 10 | Video + animation workflows |
+| Directory | Command | Purpose |
+|-----------|---------|---------|
+| `comfyui-prompting` | `/comfyui-prompting` | Model routing + prompt craft |
+| `comfyui-image` | `/comfyui-image` | Flux.2 / Z-Image stills |
+| `comfyui-video` | `/comfyui-video` | LTX, Wan, MiniMax H3 |
+| `comfyui-local-shop` | `/comfyui-local-shop` | Isolated Hermes + multi-Comfy |
+| `comfyui-batch-cron` | `/comfyui-batch-cron` | Overnight `cronjob` batches |
 
-Each bundle groups multiple ComfyUI-related skills so you can launch a full workflow with a single slash command.
+Copy `skill-bundles/*.yaml` into `$HERMES_HOME/skill-bundles/` for one-command clusters. Bundles skip missing skills (install the media pack + bundled `comfyui` for the full set).

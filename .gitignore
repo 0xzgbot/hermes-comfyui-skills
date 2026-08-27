@@ -1,7 +1,6 @@
-# Generated bundle files (source of truth is SKILL.md directories)
-*.yaml
-*.yml
-.bundled_manifest
+.DS_Store
 *~
 *.swp
-.DS_Store
+*.pyc
+__pycache__/
+.bundled_manifest

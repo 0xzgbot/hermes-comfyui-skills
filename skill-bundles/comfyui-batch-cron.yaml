@@ -1,0 +1,15 @@
+name: comfyui-batch-cron
+description: Unattended Comfy batches via Hermes cronjob.
+skills:
+  - comfyui
+  - comfyui-batch-cron
+  - comfyui-image
+  - comfyui-video
+instruction: |
+  You are in the Comfy batch-cron bundle.
+
+  Only schedule workflows that have already succeeded once. cronjob prompts
+  must be self-contained (no "continue from above"). Include health_check.py,
+  run_batch.py args, output dir, Comfy URL, and HERMES_HOME if isolated.
+  Cap parallelism to VRAM. After fire: vision_analyze a sample of outputs,
+  fetch_logs.py on failure, skill_manage keepers.
